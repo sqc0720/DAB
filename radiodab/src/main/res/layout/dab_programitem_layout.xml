@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="272dp"
+    android:layout_height="96dp"
+    android:background="@color/dab_station_item_bg"
+    android:layout_marginRight="32dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/dab_textview_name_item"
+        android:layout_width="177dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="24dp"
+        android:textColor="@color/dab_station_item_name"
+        android:textSize="32sp"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <ImageButton
+        android:id="@+id/dab_imagebutton_favorite_item"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+
+        android:src="@drawable/dab_icon_none_favorites"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <!--   "-->
+    <TextView
+        android:id="@+id/dab_textview_sec_item"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:background="@drawable/sec_frame"
+        android:gravity="center"
+        android:text="SEC"
+        android:textColor="@color/dab_sec"
+        android:textSize="20sp"
+        android:layout_marginLeft="569dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

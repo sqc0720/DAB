@@ -1,0 +1,13 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dab_string_no_signal">No Signal</string>
+    <string name="dab_string_loading">Loading</string>
+    <string name="dab_string_stationlist">Senderliste</string>
+    <string name="dab_string_favorite">Favoriten</string>
+    <string name="dab_string_search">Suchen</string>
+    <string name="dab_string_favorite_maxitem">Die maximale Anzahl der Lieblingshörfunksender wurde erreicht.</string>
+    <string name="dab_string_favorite_null">Es gibt keine Lieblingshörfunksender, gehen Sie zur Hörfunksenderliste, um Ihre Lieblingshörfunksender zu sammeln ~</string>
+    <string name="dab_string_station_null">Es gibt noch keinen Hörfunksender, versuchen Sie, nach dem Sender zu suchen ~</string>
+    <string name="dab_string_scan">Suche nach lokalen Hörfunksendern, bitte später...</string>
+</resources>

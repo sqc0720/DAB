@@ -1,0 +1,14 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dab_string_no_signal">No Signal</string>
+    <string name="dab_string_loading">Loading</string>
+
+    <string name="dab_string_stationlist">Stationslista</string>
+    <string name="dab_string_favorite">Favoriter</string>
+    <string name="dab_string_search">Sök</string>
+    <string name="dab_string_favorite_maxitem">Dina favorit radiostationer har nått gränsen.</string>
+    <string name="dab_string_favorite_null">Det finns inga favoritstationer, gå till radiolistan för att samla dina favoritradiostationer~</string>
+    <string name="dab_string_station_null">Det finns fortfarande ingen radiostation, försök leta efter stationen~</string>
+    <string name="dab_string_scan">Letar du efter lokala stationer, snälla senare...</string>
+</resources>

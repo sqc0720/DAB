@@ -1,0 +1,38 @@
+<resources>
+    <!--for dark color    -->
+    <color name="dab_name">#E6FFFFFF</color>
+    <color name="dab_label">#99FFFFFF</color>
+    <color name="dab_sec">#E6FFFFFF</color>
+    <color name="dab_sec_stroke">#20FFFFFF</color>
+    <color name="dab_sec_solid">#505258</color>
+    <color name="dab_button_solid">#0DFFFFFF</color>
+    <color name="dab_button_text">#E6FFFFFF</color>
+    <color name="dab_button_stroke">#32353A</color>
+    <color name="dab_text_hint">#E6FFFFFF</color>
+    <color name="dab_radiobutton_text_checked">#FF6255FF</color>
+    <color name="dab_radiobutton_text_unchecked">#99FFFFFF</color>
+    <color name="dab_category_type_checked">#FF135EC8</color>
+    <color name="dab_category_type_unchecked">#99393E47</color>
+    <color name="dab_category_type_text_checked">#FFFFFFFF</color>
+    <color name="dab_category_type_text_unchecked">#99FFFFFF</color>
+    <color name="dab_category_text">#E6FFFFFF</color>
+    <color name="dab_category_bg">#FF15181C</color>
+
+    <color name="dab_category_bg_title">#662A2F38</color>
+    <color name="dab_scan_hint">#E6FFFFFF</color>
+    <color name="dab_scan_cancel_bg">#FF272A32</color>
+    <color name="dab_scan_cancel_text">#E6FFFFFF</color>
+
+    <color name="dab_setting_segment_bg">#B3282B30</color>
+    <color name="dab_setting_text_main">#E6FFFFFF</color>
+    <color name="dab_setting_text_band_foucus">#FFFFFF</color>
+    <color name="dab_setting_text_band_unfoucus">#777879</color>
+    <color name="dab_Setting_band_tabIndicatorColor">#FF135EC8</color>
+    <color name="dab_setting_tab_bg_color">#FF0C0E12</color>
+
+    <color name="dab_setting_bg_start">#FF14171C</color>
+    <color name="dab_setting_bg_end">#FF020203</color>
+
+    <color name="dab_station_item_bg">#663D424D</color>
+    <color name="dab_station_item_name">#E6FFFFFF</color>
+</resources>

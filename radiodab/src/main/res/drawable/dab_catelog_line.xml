@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    android:shape="rectangle" >                          //设置形状，这里我设置的是矩形
+    <solid android:color="#FFF0F2F5" />                    //设置颜色
+    <size android:height="1dp" android:width="1110dp"/>   //设置宽度和高度
+</shape>
+

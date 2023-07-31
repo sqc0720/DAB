@@ -1,0 +1,14 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dab_string_no_signal">No Signal</string>
+    <string name="dab_string_loading">Loading</string>
+
+    <string name="dab_string_stationlist">Stasjonsliste</string>
+    <string name="dab_string_favorite">Samling</string>
+    <string name="dab_string_search">Søk</string>
+    <string name="dab_string_favorite_maxitem">Favorittstasjoner har nådd den øvre grensen.</string>
+    <string name="dab_string_favorite_null">Ingen favorittstasjon midlertidig, samle favorittstasjonene dine i stasjonslisten ~</string>
+    <string name="dab_string_station_null">Ingen stasjon midlertidig, prøv å søke ~</string>
+    <string name="dab_string_scan">Søker etter lokale stasjoner, vennligst vent ...</string>
+</resources>

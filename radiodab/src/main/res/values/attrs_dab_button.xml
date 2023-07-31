@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="DabButton">
+        <attr name="exampleString" format="string" />
+        <attr name="exampleDrawable" format="color|reference" />
+    </declare-styleable>
+</resources>

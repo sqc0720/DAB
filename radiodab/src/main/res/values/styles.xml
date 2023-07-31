@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="Widget.Theme.Radio.MyView" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:background">@color/gray_400</item>
+
+    </style>
+</resources>

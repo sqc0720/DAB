@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dab_frame_nosignal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible">
+
+    <ImageView
+        tools:ignore="ContentDescription"
+        android:id="@+id/dab_imageview_nosignal"
+        android:layout_width="360dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="781dp"
+        android:layout_marginTop="171dp"
+        android:src="@drawable/dab_no_signal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/dab_textview_nosignal"
+        android:layout_width="137dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#FF181C23"
+        android:text="@string/dab_string_no_signal"
+        android:fontFamily="Roboto"
+        android:gravity="center"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/dab_imageview_nosignal"
+        app:layout_constraintEnd_toEndOf="@+id/dab_imageview_nosignal"
+        app:layout_constraintTop_toBottomOf="@+id/dab_imageview_nosignal"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

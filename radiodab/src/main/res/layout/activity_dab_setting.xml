@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".DabSettingActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dab_setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dab_setting_background"
+        >
+
+        <ImageButton
+            android:id="@+id/imagebutton_setting_back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="48dp"
+            android:background="@null"
+            android:src="@drawable/dab_setting_bar_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:id="@+id/dab_setting_title"
+            android:layout_width="228dp"
+            android:layout_height="42dp"
+            android:text="DAB Settings"
+            android:textColor="@color/dab_setting_text_main"
+            android:textSize="32sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="120dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <fragment
+            android:id="@+id/fragment_dab_setting"
+            android:name="com.datong.radiodab.DadSettingFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

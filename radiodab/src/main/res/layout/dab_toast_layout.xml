@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="900dp"
+    android:layout_height="120dp"
+    android:background="@drawable/dab_toast_favorite_upper">
+    <TextView
+        android:layout_width="900dp"
+        android:layout_height="120dp"
+        android:text="@string/dab_string_favorite_maxitem"
+        android:gravity="center"
+        android:textColor="#FFFFFFFF"
+        android:textSize="32sp"/>
+    </LinearLayout>

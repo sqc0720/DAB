@@ -1,0 +1,43 @@
+<resources>
+    <color name="light_blue_400">#FF29B6F6</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="gray_400">#FFBDBDBD</color>
+    <color name="gray_600">#FF757575</color>
+    <color name="dab_white">#FFFFFFFF</color>
+    <color name="dab_toast_favorite_background">#FF414448</color>
+    <!--for dark color -->
+    <color name="dab_name">#FF232323</color>
+    <color name="dab_label">#FF232323</color>
+    <color name="dab_sec">#FF232323</color>
+    <color name="dab_sec_stroke">#80FFFFFF</color>
+    <color name="dab_sec_solid">#38FFFFFF</color>
+    <color name="dab_sec_solid_focus">#38FFFFFF</color>
+    <color name="dab_button_solid">#EBEFF7</color>
+    <color name="dab_button_text">#FF232323</color>
+    <color name="dab_button_stroke">#BABCC1</color>
+    <color name="dab_text_hint">#FF181C23</color>
+    <color name="dab_radiobutton_text_checked">#FF464FBD</color>
+    <color name="dab_radiobutton_text_unchecked">#FF232323</color>
+    <color name="dab_category_type_checked">#FF2178F0</color>
+    <color name="dab_category_type_unchecked">#FFFFFFFF</color>
+    <color name="dab_category_type_text_checked">#FFFFFFFF</color>
+    <color name="dab_category_type_text_unchecked">#FF232323</color>
+    <color name="dab_category_text">#FF232323</color>
+    <color name="dab_category_bg">#FFE2EAF6</color>
+    <color name="dab_category_bg_title">#FFF4F6FF</color>
+    <color name="dab_scan_hint">#FF181C23</color>
+    <color name="dab_scan_cancel_bg">#FFFFFFFF</color>
+    <color name="dab_scan_cancel_text">#FF232323</color>
+
+    <color name="dab_setting_segment_bg">#FFF0F5FA</color>
+    <color name="dab_setting_text_main">#FF232323</color>
+    <color name="dab_setting_text_band_foucus">#FFFFFF</color>
+    <color name="dab_setting_text_band_unfoucus">#4D5053</color>
+    <color name="dab_Setting_band_tabIndicatorColor">#FF2178F0</color>
+    <color name="dab_setting_tab_bg_color">#FFDDE2EB</color>
+
+    <color name="dab_setting_bg_start">#FFD0E1F2</color>
+    <color name="dab_setting_bg_end">#FFC5D2E6</color>
+    <color name="dab_station_item_bg">#CCFFFFFF</color>
+    <color name="dab_station_item_name">#FF232323</color>
+</resources>

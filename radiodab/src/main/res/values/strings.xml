@@ -1,0 +1,13 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dab_string_no_signal">No Signal</string>
+    <string name="dab_string_loading">Loading</string>
+    <string name="dab_string_stationlist">Station List</string>
+    <string name="dab_string_favorite">Favorites</string>
+    <string name="dab_string_search">Search</string>
+    <string name="dab_string_favorite_maxitem">Favorite radio station has reached the upper limit.</string>
+    <string name="dab_string_favorite_null">No favorite radio station temporarily,collect your favorite stations in the station list~</string>
+    <string name="dab_string_station_null">No radio station temporarily, try to search~</string>
+    <string name="dab_string_scan">Searching for local radio stations,please wait...</string>
+</resources>

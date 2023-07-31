@@ -1,0 +1,14 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dab_string_no_signal">No Signal</string>
+    <string name="dab_string_loading">Loading</string>
+
+    <string name="dab_string_stationlist">قائمة المحطات</string>
+    <string name="dab_string_favorite">المفضله</string>
+    <string name="dab_string_search">بحث</string>
+    <string name="dab_string_favorite_maxitem">وصلت المحطات المفضلة إلى الحد الأقصى.</string>
+    <string name="dab_string_favorite_null">لا توجد محطات مفضلة حتى الآن، انتقل إلى قائمة المحطات لوضع إشارة مرجعية على محطاتك المفضلة ~</string>
+    <string name="dab_string_station_null">لا توجد محطة راديو، حاول البحث عنها ~</string>
+    <string name="dab_string_scan">جاري البحث عن المحطات المحلية، يرجي الانتظار ...</string>
+</resources>
