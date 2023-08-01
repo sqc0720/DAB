@@ -11,4 +11,5 @@
     <string name="dab_string_favorite_null">Il n\'y a pas de stations favorites, allez dans la liste des radios pour collecter vos stations favorites~.</string>
     <string name="dab_string_station_null">Il n\'y a pas encore de station de radio, essayez de rechercher la station~</string>
     <string name="dab_string_scan">Recherche de stations locales, s\'il vous plaît plus tard...</string>
+    <string name="dab_string_scan_cancel">Annuler</string>
 </resources>

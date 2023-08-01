@@ -35,7 +35,7 @@
         android:textAllCaps="false"
         android:textColor="@color/dab_scan_cancel_text"
         android:textSize="28sp"
-        android:text="Cancel"
+        android:text="@string/dab_string_scan_cancel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>

@@ -11,4 +11,5 @@
     <string name="dab_string_favorite_null">Suosikkiasemia ei ole, siirry radioluetteloon kerätäksesi suosikkiradioasemasi~</string>
     <string name="dab_string_station_null">Radioasemaa ei ole vielä, yritä etsiä asemaa~</string>
     <string name="dab_string_scan">Paikallisten asemien etsiminen, myöhemmin...</string>
+    <string name="dab_string_scan_cancel">Cancel</string>
 </resources>

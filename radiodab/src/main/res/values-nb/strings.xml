@@ -11,4 +11,5 @@
     <string name="dab_string_favorite_null">Ingen favorittstasjon midlertidig, samle favorittstasjonene dine i stasjonslisten ~</string>
     <string name="dab_string_station_null">Ingen stasjon midlertidig, prøv å søke ~</string>
     <string name="dab_string_scan">Søker etter lokale stasjoner, vennligst vent ...</string>
+    <string name="dab_string_scan_cancel">Avbryt</string>
 </resources>

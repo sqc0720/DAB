@@ -11,4 +11,5 @@
     <string name="dab_string_favorite_null">لا توجد محطات مفضلة حتى الآن، انتقل إلى قائمة المحطات لوضع إشارة مرجعية على محطاتك المفضلة ~</string>
     <string name="dab_string_station_null">لا توجد محطة راديو، حاول البحث عنها ~</string>
     <string name="dab_string_scan">جاري البحث عن المحطات المحلية، يرجي الانتظار ...</string>
+    <string name="dab_string_scan_cancel">إلغاء</string>
 </resources>

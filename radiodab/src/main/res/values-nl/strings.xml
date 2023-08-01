@@ -11,4 +11,5 @@
     <string name="dab_string_favorite_null">Er zijn geen favoriete stations, ga naar de radiolijst om je favoriete radiostations ~ te verzamelen~</string>
     <string name="dab_string_station_null">Er is nog steeds geen radiostation, zoek naar het station ~</string>
     <string name="dab_string_scan">Op zoek naar lokale stations, later...</string>
+    <string name="dab_string_scan_cancel">Annuleren</string>
 </resources>

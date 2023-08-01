@@ -10,4 +10,5 @@
     <string name="dab_string_favorite_null">No favorite radio station temporarily,collect your favorite stations in the station list~</string>
     <string name="dab_string_station_null">No radio station temporarily, try to search~</string>
     <string name="dab_string_scan">Searching for local radio stations,please wait...</string>
+    <string name="dab_string_scan_cancel">Cancel</string>
 </resources>

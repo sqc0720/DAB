@@ -10,4 +10,5 @@
     <string name="dab_string_favorite_null">Es gibt keine Lieblingshörfunksender, gehen Sie zur Hörfunksenderliste, um Ihre Lieblingshörfunksender zu sammeln ~</string>
     <string name="dab_string_station_null">Es gibt noch keinen Hörfunksender, versuchen Sie, nach dem Sender zu suchen ~</string>
     <string name="dab_string_scan">Suche nach lokalen Hörfunksendern, bitte später...</string>
+    <string name="dab_string_scan_cancel">Abbrechen</string>
 </resources>

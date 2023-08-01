@@ -11,4 +11,5 @@
     <string name="dab_string_favorite_null">Det finns inga favoritstationer, gå till radiolistan för att samla dina favoritradiostationer~</string>
     <string name="dab_string_station_null">Det finns fortfarande ingen radiostation, försök leta efter stationen~</string>
     <string name="dab_string_scan">Letar du efter lokala stationer, snälla senare...</string>
+    <string name="dab_string_scan_cancel">Avbryt</string>
 </resources>

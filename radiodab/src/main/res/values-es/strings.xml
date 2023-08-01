@@ -11,4 +11,5 @@
     <string name="dab_string_favorite_null">No hay emisoras favoritas, marque sus emisoras favoritas en la lista de emisoras.</string>
     <string name="dab_string_station_null">No hay emisoras, intenta buscarlas.</string>
     <string name="dab_string_scan">Buscando emisoras locales, espere...</string>
+    <string name="dab_string_scan_cancel">Cancelar</string>
 </resources>

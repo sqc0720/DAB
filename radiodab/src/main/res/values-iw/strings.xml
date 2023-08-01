@@ -11,4 +11,6 @@
     <string name="dab_string_favorite_null">אין תחנות מועדפות, עבור לרשימת הרדיו כדי לאסוף את תחנות הרדיו המועדפות עליך~</string>
     <string name="dab_string_station_null">אין עדיין תחנת רדיו, נסה לחפש את התחנה~</string>
     <string name="dab_string_scan">חפש תחנות מקומיות, בבקשה מאוחר יותר...</string>
+    <string name="dab_string_scan_cancel">ביטול</string>
+
 </resources>
