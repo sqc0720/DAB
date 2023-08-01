@@ -38,7 +38,7 @@
         android:text="SEC"
         android:textColor="@color/dab_sec"
         android:textSize="20sp"
-        android:layout_marginLeft="569dp"
+        android:layout_marginStart="569dp"
         android:layout_marginTop="152dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

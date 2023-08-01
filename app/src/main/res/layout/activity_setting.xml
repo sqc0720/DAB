@@ -18,7 +18,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="18dp"
-        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
         android:background="@null"
         android:src="@drawable/setting_bar_icon_back_dark"
         app:layout_constraintTop_toTopOf="parent"
@@ -30,7 +30,7 @@
         android:textColor="#FF232323"
         android:textSize="32sp"
         android:layout_marginTop="32dp"
-        android:layout_marginLeft="120dp"
+        android:layout_marginStart="120dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <fragment
