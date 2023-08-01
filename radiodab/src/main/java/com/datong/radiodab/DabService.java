@@ -109,7 +109,7 @@ public class DabService extends MediaBrowserService {
         setServiceForeground();
         //for other component call
         if(intent != null) {
-            if (intent.getStringExtra(EXTRACMD_PLAYSTATUS).equals("DAB_PLAY")) {
+            if ("DAB_PLAY".equals(intent.getStringExtra(EXTRACMD_PLAYSTATUS))) {
                 servicePlay();
                 Log.i(TAG, "Service -> onStartCommand, servicePlay " );
             }
