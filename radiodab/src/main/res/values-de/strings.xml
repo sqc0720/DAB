@@ -11,4 +11,22 @@
     <string name="dab_string_station_null">Es gibt noch keinen Hörfunksender, versuchen Sie, nach dem Sender zu suchen ~</string>
     <string name="dab_string_scan">Suche nach lokalen Hörfunksendern, bitte später...</string>
     <string name="dab_string_scan_cancel">Abbrechen</string>
+    <!--DAB Settings-->
+    <string name="dab_settings">DAB-Einstellungen</string>
+    <string name="dab_setting_string_announment">Announment</string>
+    <string name="dab_setting_string_band_support">Frequenzbereiche</string>
+    <string name="dab_setting_string_band_iii_and_l_band">Band III und L-Band</string>
+    <string name="dab_setting_string_band_iii_only">Nur Band III</string>
+    <string name="dab_setting_string_l_band_only">Nur L-Band</string>
+    <string name="dab_setting_string_alarm">Alarm</string>
+    <string name="dab_setting_string_news_flash">News-Flash</string>
+    <string name="dab_setting_string_sport_report">Sportnachrichten</string>
+    <string name="dab_setting_string_road_traffic_flash">Verkehrsmeldungen</string>
+    <string name="dab_setting_string_area_weather_flash">Bereich Wetternachrichten</string>
+    <string name="dab_setting_string_financial_report">Finanznachrichten</string>
+    <string name="dab_setting_string_transport_flash">Transportverkehrsmeldungen</string>
+    <string name="dab_setting_string_event_announcement">Veranstaltungsankündigungen</string>
+    <string name="dab_setting_string_program_information">Programminformationen</string>
+    <string name="dab_setting_string_warning_service">Warnung/Dienst</string>
+    <string name="dab_setting_string_dls">DLS</string>
 </resources>

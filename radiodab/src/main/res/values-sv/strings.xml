@@ -12,4 +12,22 @@
     <string name="dab_string_station_null">Det finns fortfarande ingen radiostation, försök leta efter stationen~</string>
     <string name="dab_string_scan">Letar du efter lokala stationer, snälla senare...</string>
     <string name="dab_string_scan_cancel">Avbryt</string>
+    <!--DAB Settings-->
+    <string name="dab_settings">DAB-inställningar</string>
+    <string name="dab_setting_string_announment">Announment</string>
+    <string name="dab_setting_string_band_support">Bandstöd</string>
+    <string name="dab_setting_string_band_iii_and_l_band">Band III och L-band</string>
+    <string name="dab_setting_string_band_iii_only">Endast band III</string>
+    <string name="dab_setting_string_l_band_only">Endast L-band</string>
+    <string name="dab_setting_string_alarm">Alarm</string>
+    <string name="dab_setting_string_news_flash">Nyhetsmeddelande</string>
+    <string name="dab_setting_string_sport_report">Sportrapport</string>
+    <string name="dab_setting_string_road_traffic_flash">Vägtrafikmeddelande</string>
+    <string name="dab_setting_string_area_weather_flash">Väderrapport för området</string>
+    <string name="dab_setting_string_financial_report">Ekonomirapport</string>
+    <string name="dab_setting_string_transport_flash">Transportmeddelande</string>
+    <string name="dab_setting_string_event_announcement">Händelsemeddelande</string>
+    <string name="dab_setting_string_program_information">Programinformation</string>
+    <string name="dab_setting_string_warning_service">Varning/Service</string>
+    <string name="dab_setting_string_dls">DLS</string>
 </resources>

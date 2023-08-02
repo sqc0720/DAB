@@ -12,4 +12,22 @@
     <string name="dab_string_station_null">Ingen stasjon midlertidig, prøv å søke ~</string>
     <string name="dab_string_scan">Søker etter lokale stasjoner, vennligst vent ...</string>
     <string name="dab_string_scan_cancel">Avbryt</string>
+    <!--DAB Settings-->
+    <string name="dab_settings">DAB Innstillinger</string>
+    <string name="dab_setting_string_announment">Announment</string>
+    <string name="dab_setting_string_band_support">Båndstøtte</string>
+    <string name="dab_setting_string_band_iii_and_l_band">Bånd III og L-bånd</string>
+    <string name="dab_setting_string_band_iii_only">Bare bånd III</string>
+    <string name="dab_setting_string_l_band_only">Bare L-bånd</string>
+    <string name="dab_setting_string_alarm">Alarm</string>
+    <string name="dab_setting_string_news_flash">Nyhetsmelding</string>
+    <string name="dab_setting_string_sport_report">Sportsrapport</string>
+    <string name="dab_setting_string_road_traffic_flash">Trafikkmelding</string>
+    <string name="dab_setting_string_area_weather_flash">Lokal værmelding</string>
+    <string name="dab_setting_string_financial_report">Økonomisk rapport</string>
+    <string name="dab_setting_string_transport_flash">Transportmelding</string>
+    <string name="dab_setting_string_event_announcement">Arrangementinformasjon</string>
+    <string name="dab_setting_string_program_information">Programinformasjon</string>
+    <string name="dab_setting_string_warning_service">Advarsel/service</string>
+    <string name="dab_setting_string_dls">DLS</string>
 </resources>

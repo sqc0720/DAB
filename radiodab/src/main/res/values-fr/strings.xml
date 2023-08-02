@@ -12,4 +12,22 @@
     <string name="dab_string_station_null">Il n\'y a pas encore de station de radio, essayez de rechercher la station~</string>
     <string name="dab_string_scan">Recherche de stations locales, s\'il vous plaît plus tard...</string>
     <string name="dab_string_scan_cancel">Annuler</string>
+    <!--DAB Settings-->
+    <string name="dab_settings">Paramètres DAB</string>
+    <string name="dab_setting_string_announment">Announment</string>
+    <string name="dab_setting_string_band_support">Support de bande</string>
+    <string name="dab_setting_string_band_iii_and_l_band">Bande III et bande L</string>
+    <string name="dab_setting_string_band_iii_only">Bande III uniquement</string>
+    <string name="dab_setting_string_l_band_only">Bande L uniquement</string>
+    <string name="dab_setting_string_alarm">Alarme</string>
+    <string name="dab_setting_string_news_flash">Flash d\'information</string>
+    <string name="dab_setting_string_sport_report">Reportage sur le sport</string>
+    <string name="dab_setting_string_road_traffic_flash">Flash sur le trafic routier</string>
+    <string name="dab_setting_string_area_weather_flash">Flash météo de la région</string>
+    <string name="dab_setting_string_financial_report">Rapport financier</string>
+    <string name="dab_setting_string_transport_flash">Flash sur les transports</string>
+    <string name="dab_setting_string_event_announcement">Annonce de l\'événement</string>
+    <string name="dab_setting_string_program_information">Informations sur le programme</string>
+    <string name="dab_setting_string_warning_service">Avertissement/Service</string>
+    <string name="dab_setting_string_dls">DLS</string>
 </resources>

@@ -12,4 +12,22 @@
     <string name="dab_string_station_null">Radioasemaa ei ole vielä, yritä etsiä asemaa~</string>
     <string name="dab_string_scan">Paikallisten asemien etsiminen, myöhemmin...</string>
     <string name="dab_string_scan_cancel">Cancel</string>
+    <!--DAB Settings-->
+    <string name="dab_settings">DAB Settings</string>
+    <string name="dab_setting_string_announment">Announment</string>
+    <string name="dab_setting_string_band_support">Band Support</string>
+    <string name="dab_setting_string_band_iii_and_l_band">Band III and L-Band</string>
+    <string name="dab_setting_string_band_iii_only">Band III only</string>
+    <string name="dab_setting_string_l_band_only">L-Band only</string>
+    <string name="dab_setting_string_alarm">Alarm</string>
+    <string name="dab_setting_string_news_flash">News Flash</string>
+    <string name="dab_setting_string_sport_report">Sport Report</string>
+    <string name="dab_setting_string_road_traffic_flash">Road Traffic Flash</string>
+    <string name="dab_setting_string_area_weather_flash">Area Weather Flash</string>
+    <string name="dab_setting_string_financial_report">Financial Report</string>
+    <string name="dab_setting_string_transport_flash">Transport Flash</string>
+    <string name="dab_setting_string_event_announcement">Event Announcement</string>
+    <string name="dab_setting_string_program_information">Program Information</string>
+    <string name="dab_setting_string_warning_service">Warning/Service</string>
+    <string name="dab_setting_string_dls">DLS</string>
 </resources>

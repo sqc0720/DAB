@@ -12,4 +12,22 @@
     <string name="dab_string_station_null">Er is nog steeds geen radiostation, zoek naar het station ~</string>
     <string name="dab_string_scan">Op zoek naar lokale stations, later...</string>
     <string name="dab_string_scan_cancel">Annuleren</string>
+    <!--DAB Settings-->
+    <string name="dab_settings">DAB-instellingen</string>
+    <string name="dab_setting_string_announment">Announment</string>
+    <string name="dab_setting_string_band_support">Bandondersteuning</string>
+    <string name="dab_setting_string_band_iii_and_l_band">Band III en L-band</string>
+    <string name="dab_setting_string_band_iii_only">Alleen band III</string>
+    <string name="dab_setting_string_l_band_only">Alleen L-band</string>
+    <string name="dab_setting_string_alarm">Alarm</string>
+    <string name="dab_setting_string_news_flash">Nieuwsflits</string>
+    <string name="dab_setting_string_sport_report">Sportverslaggeving</string>
+    <string name="dab_setting_string_road_traffic_flash">Verkeersinformatie</string>
+    <string name="dab_setting_string_area_weather_flash">Weerbericht</string>
+    <string name="dab_setting_string_financial_report">Financieel verslag</string>
+    <string name="dab_setting_string_transport_flash">Transportinformatie</string>
+    <string name="dab_setting_string_event_announcement">Aankondiging</string>
+    <string name="dab_setting_string_program_information">Programma-informatie</string>
+    <string name="dab_setting_string_warning_service">Waarschuwing/Service</string>
+    <string name="dab_setting_string_dls">DLS</string>
 </resources>

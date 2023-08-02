@@ -12,5 +12,22 @@
     <string name="dab_string_station_null">אין עדיין תחנת רדיו, נסה לחפש את התחנה~</string>
     <string name="dab_string_scan">חפש תחנות מקומיות, בבקשה מאוחר יותר...</string>
     <string name="dab_string_scan_cancel">ביטול</string>
-
+    <!--DAB Settings-->
+    <string name="dab_settings"> הגדרות DAB</string>
+    <string name="dab_setting_string_announment">Announment</string>
+    <string name="dab_setting_string_band_support">תמיכה ברשתות</string>
+    <string name="dab_setting_string_band_iii_and_l_band">Band III ו-L-Band</string>
+    <string name="dab_setting_string_band_iii_only">Band III בלבד</string>
+    <string name="dab_setting_string_l_band_only">L-Band בלבד</string>
+    <string name="dab_setting_string_alarm">אזעקה</string>
+    <string name="dab_setting_string_news_flash">מבזק חדשות</string>
+    <string name="dab_setting_string_sport_report">דיווחי ספורט</string>
+    <string name="dab_setting_string_road_traffic_flash">מבזק עומסי תנועה</string>
+    <string name="dab_setting_string_area_weather_flash">מבזק מזג אוויר</string>
+    <string name="dab_setting_string_financial_report">דיווחים פיננסים</string>
+    <string name="dab_setting_string_transport_flash">מבזק תנועה</string>
+    <string name="dab_setting_string_event_announcement">התראת אירוע</string>
+    <string name="dab_setting_string_program_information">מידע מערכת</string>
+    <string name="dab_setting_string_warning_service">אזהרה/שירות</string>
+    <string name="dab_setting_string_dls">DLS</string>
 </resources>

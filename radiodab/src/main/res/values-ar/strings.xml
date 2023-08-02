@@ -12,4 +12,22 @@
     <string name="dab_string_station_null">لا توجد محطة راديو، حاول البحث عنها ~</string>
     <string name="dab_string_scan">جاري البحث عن المحطات المحلية، يرجي الانتظار ...</string>
     <string name="dab_string_scan_cancel">إلغاء</string>
+    <!--DAB Settings-->
+    <string name="dab_settings">إعدادات DAB</string>
+    <string name="dab_setting_string_announment">Announment</string>
+    <string name="dab_setting_string_band_support">دعم النطاق</string>
+    <string name="dab_setting_string_band_iii_and_l_band">نطاق III ونطاق L</string>
+    <string name="dab_setting_string_band_iii_only">نطاق III فقط</string>
+    <string name="dab_setting_string_l_band_only">نطاق L فقط</string>
+    <string name="dab_setting_string_alarm">إنذار</string>
+    <string name="dab_setting_string_news_flash">فلاش أخبار</string>
+    <string name="dab_setting_string_sport_report">تقرير الرياضة</string>
+    <string name="dab_setting_string_road_traffic_flash">فلاش مرور الطريق</string>
+    <string name="dab_setting_string_area_weather_flash">فلاش جو المنطقة</string>
+    <string name="dab_setting_string_financial_report">التقرير المالي</string>
+    <string name="dab_setting_string_transport_flash">فلاش النقل</string>
+    <string name="dab_setting_string_event_announcement">إعلان الحادث</string>
+    <string name="dab_setting_string_program_information">معلومات البرنامج</string>
+    <string name="dab_setting_string_warning_service">إنذار/خدمة</string>
+    <string name="dab_setting_string_dls">DLS</string>
 </resources>

@@ -12,4 +12,22 @@
     <string name="dab_string_station_null">Sem estações de rádio, tente procurar.</string>
     <string name="dab_string_scan">Em busca de estações de rádio locais, por favor aguarde...</string>
     <string name="dab_string_scan_cancel">Cancelar</string>
+    <!--DAB Settings-->
+    <string name="dab_settings">Configurações DAB</string>
+    <string name="dab_setting_string_announment">Announment</string>
+    <string name="dab_setting_string_band_support">Suporte de Banda</string>
+    <string name="dab_setting_string_band_iii_and_l_band">Banda III e L</string>
+    <string name="dab_setting_string_band_iii_only">Só Banda III</string>
+    <string name="dab_setting_string_l_band_only">Só Banda L</string>
+    <string name="dab_setting_string_alarm">Alarme</string>
+    <string name="dab_setting_string_news_flash">Flash de Notícias</string>
+    <string name="dab_setting_string_sport_report">Relatório Desportivo</string>
+    <string name="dab_setting_string_road_traffic_flash">Flash de Trânsito</string>
+    <string name="dab_setting_string_area_weather_flash">Flash de Metereologia de Área</string>
+    <string name="dab_setting_string_financial_report">Relatório Financeiro</string>
+    <string name="dab_setting_string_transport_flash">Flash de Transporte</string>
+    <string name="dab_setting_string_event_announcement">Anúncio de Evento</string>
+    <string name="dab_setting_string_program_information">Informação do Programa</string>
+    <string name="dab_setting_string_warning_service">Aviso/Serviço</string>
+    <string name="dab_setting_string_dls">DLS</string>
 </resources>
