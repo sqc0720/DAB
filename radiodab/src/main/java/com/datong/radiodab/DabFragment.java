@@ -373,50 +373,51 @@ public class DabFragment extends Fragment implements View.OnClickListener,
         if (!isServiceLive())
             return;
         // category list  left  header
-        if (mSelectedList == 0){
-            if (direction == 1){
-                if(mSelectedIndex <= 0){
-                    mSelectedIndex= mDabStationContent.getDabStationListCategorySize()-1;
-                }else{
-                    mSelectedIndex=mSelectedIndex-1;
+        int id = mListGroup.getCheckedRadioButtonId();
+        if (id == R.id.dab_radiobutton_list) {
+            if (direction == 1) {
+                if (mSelectedIndex <= 0) {
+                    mSelectedIndex = mDabStationContent.getDabStationListCategorySize() - 1;
+                } else {
+                    mSelectedIndex = mSelectedIndex - 1;
                 }
-            }else if(direction == 2){
-                if(mSelectedIndex >= (mDabStationContent.getDabStationListCategorySize() - 1)) {
-                    mSelectedIndex= 0;
-                }else{
-                    mSelectedIndex=mSelectedIndex+1;
+            } else if (direction == 2) {
+                if (mSelectedIndex >= (mDabStationContent.getDabStationListCategorySize() - 1)) {
+                    mSelectedIndex = 0;
+                } else {
+                    mSelectedIndex = mSelectedIndex + 1;
                 }
             }
-        }else if(mSelectedList == 1){
-            if (direction == 1){
-                if((mSelectedFavoriteIndex <= 0)) {
-                    mSelectedFavoriteIndex= mDabStationContent.getDabStationListFavoriteSize()-1;
-                }else{
-                    mSelectedFavoriteIndex=mSelectedFavoriteIndex-1;
+        } else if (id == R.id.dab_radiobutton_favorite) {
+            if (direction == 1) {
+                if ((mSelectedFavoriteIndex <= 0)) {
+                    mSelectedFavoriteIndex = mDabStationContent.getDabStationListFavoriteSize() - 1;
+                } else {
+                    mSelectedFavoriteIndex = mSelectedFavoriteIndex - 1;
                 }
-            }else if(direction == 2){
-                if(mSelectedFavoriteIndex >= (mDabStationContent.getDabStationListFavoriteSize() - 1)) {
-                    mSelectedFavoriteIndex= 0;
-                }else{
-                    mSelectedFavoriteIndex=mSelectedFavoriteIndex+1;
+            } else if (direction == 2) {
+                if (mSelectedFavoriteIndex >= (mDabStationContent.getDabStationListFavoriteSize() - 1)) {
+                    mSelectedFavoriteIndex = 0;
+                } else {
+                    mSelectedFavoriteIndex = mSelectedFavoriteIndex + 1;
                 }
             }
         }
         DabStation station=null;
         DabProgramListAdapter adapter;
-        if (mSelectedList == 0) { // for category
+        if (id == R.id.dab_radiobutton_list) { // for category
             station = mDabStationContent.getDabStationListCategoryItem(mSelectedIndex);
             adapter = (DabProgramListAdapter) mRecyclerViewList.getAdapter();
             if (!adapter.getFavorite()) {
                 adapter.setmSelectedIndex(mSelectedIndex);
             }
-        } else if (mSelectedList == 1) { // for favorite
+        } else if (id == R.id.dab_radiobutton_favorite) { // for favorite
             station = mDabStationContent.getDabStationListFavoriteItem(mSelectedFavoriteIndex);
             adapter = (DabProgramListAdapter) mRecyclerViewList.getAdapter();
             if (adapter.getFavorite()) {
                 adapter.setmSelectedIndex(mSelectedFavoriteIndex);
             }
-        }else {
+        } else {
             return;
         }
         if (station != null) {
@@ -686,25 +687,20 @@ public class DabFragment extends Fragment implements View.OnClickListener,
             mRecyclerViewList.setVisibility(View.VISIBLE);
             mTextViewHint.setVisibility(View.GONE);
             DabProgramListAdapter adapter;
-            if(mSelectedList==0){ // for category
-                adapter = new DabProgramListAdapter(mDabStationContent.getDabStationListFavorite(),
-                        -1, true,
-                        mDabStationContent.getDabStationListCategory(), mFavoriteEngine);
-            }else if(mSelectedList==1){
-                if(mSelectedFavoriteIndex<0)
-                    mSelectedFavoriteIndex=0;
-                else if(mSelectedFavoriteIndex>=mDabStationContent.getDabStationListFavoriteSize())
-                    mSelectedFavoriteIndex=mDabStationContent.getDabStationListFavoriteSize()-1;
-                adapter = new DabProgramListAdapter(mDabStationContent.getDabStationListFavorite(),
-                        mSelectedFavoriteIndex, true,
-                        mDabStationContent.getDabStationListCategory(), mFavoriteEngine);
-            }else{
-                mSelectedList=0;
-                mSelectedIndex=0;
-                adapter = new DabProgramListAdapter(mDabStationContent.getDabStationListFavorite(),
-                        -1, true,
-                        mDabStationContent.getDabStationListCategory(), mFavoriteEngine);
-            }
+//            if (mSelectedList == 0) { // for category
+//                adapter = new DabProgramListAdapter(mDabStationContent.getDabStationListFavorite(), mDabStationContent.findFavoriteListSelectPosition(), true, mDabStationContent.getDabStationListCategory(), mFavoriteEngine);
+//            } else if (mSelectedList == 1) {
+//                if (mSelectedFavoriteIndex < 0) mSelectedFavoriteIndex = 0;
+//                else if (mSelectedFavoriteIndex >= mDabStationContent.getDabStationListFavoriteSize())
+//                    mSelectedFavoriteIndex = mDabStationContent.getDabStationListFavoriteSize() - 1;
+//                adapter = new DabProgramListAdapter(mDabStationContent.getDabStationListFavorite(), mDabStationContent.findFavoriteListSelectPosition(), true, mDabStationContent.getDabStationListCategory(), mFavoriteEngine);
+//            } else {
+//                mSelectedList = 0;
+//                mSelectedIndex = 0;
+//                adapter = new DabProgramListAdapter(mDabStationContent.getDabStationListFavorite(), 1, true, mDabStationContent.getDabStationListCategory(), mFavoriteEngine);
+//            }
+            mSelectedFavoriteIndex = mDabStationContent.findFavoriteListSelectPosition();
+            adapter = new DabProgramListAdapter(mDabStationContent.getDabStationListFavorite(), mDabStationContent.findFavoriteListSelectPosition(), true, mDabStationContent.getDabStationListCategory(), mFavoriteEngine);
             mRecyclerViewList.setAdapter(adapter);
         }
     }
@@ -717,25 +713,21 @@ public class DabFragment extends Fragment implements View.OnClickListener,
             mRecyclerViewList.setVisibility(View.VISIBLE);
             mTextViewHint.setVisibility(View.GONE);
             DabProgramListAdapter adapter;
-            if(mSelectedList==0){ // for category
-                if(mSelectedIndex<0)
-                    mSelectedIndex=0;
-                else if(mSelectedIndex>=mDabStationContent.getDabStationListCategorySize() )
-                    mSelectedIndex=mDabStationContent.getDabStationListCategorySize()-1;
-                adapter = new DabProgramListAdapter(mDabStationContent.getDabStationListCategory(),
-                                        mSelectedIndex, false,
-                                        mDabStationContent.getDabStationListFavorite(), mFavoriteEngine);
-            }else if(mSelectedList==1){ // for favorite
-                adapter = new DabProgramListAdapter(mDabStationContent.getDabStationListCategory(),
-                        -1, false,
-                        mDabStationContent.getDabStationListFavorite(), mFavoriteEngine);
-            }else{
-                mSelectedList=0;
-                mSelectedIndex=0;
-                adapter = new DabProgramListAdapter(mDabStationContent.getDabStationListCategory(),
-                        -1, false,
-                        mDabStationContent.getDabStationListFavorite(), mFavoriteEngine);
-            }
+//            if (mSelectedList == 0) { // for category
+//                if (mSelectedIndex < 0) mSelectedIndex = 0;
+//                else if (mSelectedIndex >= mDabStationContent.getDabStationListCategorySize())
+//                    mSelectedIndex = mDabStationContent.getDabStationListCategorySize() - 1;
+//                adapter = new DabProgramListAdapter(mDabStationContent.getDabStationListCategory(), mDabStationContent.findStationListSelectPosition(), false, mDabStationContent.getDabStationListFavorite(), mFavoriteEngine);
+//            } else if (mSelectedList == 1) { // for favorite
+//                adapter = new DabProgramListAdapter(mDabStationContent.getDabStationListCategory(), mDabStationContent.findStationListSelectPosition(), false, mDabStationContent.getDabStationListFavorite(), mFavoriteEngine);
+//            } else {
+//                mSelectedList = 0;
+//                mSelectedIndex = 0;
+//                adapter = new DabProgramListAdapter(mDabStationContent.getDabStationListCategory(), -1, false, mDabStationContent.getDabStationListFavorite(), mFavoriteEngine);
+//            }
+            mSelectedIndex = mDabStationContent.findStationListSelectPosition();
+            adapter = new DabProgramListAdapter(mDabStationContent.getDabStationListCategory(), mSelectedIndex, false, mDabStationContent.getDabStationListFavorite(), mFavoriteEngine);
+
             mRecyclerViewList.setAdapter(adapter);
         }
     }

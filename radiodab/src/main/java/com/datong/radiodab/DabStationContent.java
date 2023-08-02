@@ -382,7 +382,37 @@ public class DabStationContent {
         return 0L;
     }
 
+    public int findFavoriteListSelectPosition() {
+        int position = -1;
+        long id = DabSharePreference.getDabCurrentStationID(mContext);
+        long frequency = DabSharePreference.getDabCurrentStationFrequency(mContext);
+        if (mDabListFavorite.size() <= 0)
+            return position;
+        for (int i = 0; i < mDabListFavorite.size(); i++) {
+            DabStation station = mDabListFavorite.get(i);
+            if ((station.getFrequency() == frequency) && (station.getService_id() == id)) {
+                position = i;
+                return position;
+            }
+        }
+        return position;
+    }
 
+    public int findStationListSelectPosition() {
+        int position = -1;
+        long id = DabSharePreference.getDabCurrentStationID(mContext);
+        long frequency = DabSharePreference.getDabCurrentStationFrequency(mContext);
+        if (mDabListCategory.size() == 0)
+            return position;
+        for (int i = 0; i < mDabListCategory.size(); i++) {
+            DabStation station = mDabListCategory.get(i);
+            if ((station.getFrequency() == frequency) && (station.getService_id() == id)) {
+                position = i;
+                return position;
+            }
+        }
+        return position;
+    }
 
 
 
