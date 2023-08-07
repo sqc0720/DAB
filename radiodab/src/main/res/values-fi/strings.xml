@@ -1,12 +1,12 @@
 <resources>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="dab_string_no_signal">No Signal</string>
+    <string name="dab_string_no_signal">Ei signaalia</string>
     <string name="dab_string_loading">Loading</string>
 
     <string name="dab_string_stationlist">Asemaluettelo</string>
-    <string name="dab_string_favorite"></string>
-    <string name="dab_string_search"></string>
+    <string name="dab_string_favorite">Suosikkiluettelo</string>
+    <string name="dab_string_search">Skannaa</string>
     <string name="dab_string_favorite_maxitem">Suosikkiradioasemien määrä on saavuttanut rajansa.</string>
     <string name="dab_string_favorite_null">Suosikkiasemia ei ole, siirry radioluetteloon kerätäksesi suosikkiradioasemasi~</string>
     <string name="dab_string_station_null">Radioasemaa ei ole vielä, yritä etsiä asemaa~</string>
@@ -30,4 +30,12 @@
     <string name="dab_setting_string_program_information">Program Information</string>
     <string name="dab_setting_string_warning_service">Warning/Service</string>
     <string name="dab_setting_string_dls">DLS</string>
+    <string name="dab_string_all">Kaikki</string>
+    <string name="dab_string_news">Uutiset</string>
+    <string name="dab_string_talk">Talk</string>
+    <string name="dab_string_sports">Liikunta</string>
+    <string name="dab_string_popular">Suosittu</string>
+    <string name="dab_string_classic">Klassinen</string>
+    <string name="dab_string_no_pty">Ei ohjelmatyyppiä</string>
+    <string name="dab_string_select_a_category">Valitse kategoria</string>
 </resources>

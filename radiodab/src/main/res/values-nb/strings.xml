@@ -1,11 +1,11 @@
 <resources>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="dab_string_no_signal">No Signal</string>
+    <string name="dab_string_no_signal">Ingen signaler</string>
     <string name="dab_string_loading">Loading</string>
 
     <string name="dab_string_stationlist">Stasjonsliste</string>
-    <string name="dab_string_favorite">Samling</string>
+    <string name="dab_string_favorite">Favoritter</string>
     <string name="dab_string_search">Søk</string>
     <string name="dab_string_favorite_maxitem">Favorittstasjoner har nådd den øvre grensen.</string>
     <string name="dab_string_favorite_null">Ingen favorittstasjon midlertidig, samle favorittstasjonene dine i stasjonslisten ~</string>
@@ -30,4 +30,12 @@
     <string name="dab_setting_string_program_information">Programinformasjon</string>
     <string name="dab_setting_string_warning_service">Advarsel/service</string>
     <string name="dab_setting_string_dls">DLS</string>
+    <string name="dab_string_all">Alle</string>
+    <string name="dab_string_news">Nyheter</string>
+    <string name="dab_string_talk">Talkshow</string>
+    <string name="dab_string_sports">Sport</string>
+    <string name="dab_string_popular">Populær</string>
+    <string name="dab_string_classic">Klassisk</string>
+    <string name="dab_string_no_pty">Ingen programtype</string>
+    <string name="dab_string_select_a_category">Velg en kategori</string>
 </resources>

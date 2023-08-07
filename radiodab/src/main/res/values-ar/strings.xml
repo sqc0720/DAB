@@ -1,11 +1,11 @@
 <resources>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="dab_string_no_signal">No Signal</string>
+    <string name="dab_string_no_signal">لا إشارة</string>
     <string name="dab_string_loading">Loading</string>
 
     <string name="dab_string_stationlist">قائمة المحطات</string>
-    <string name="dab_string_favorite">المفضله</string>
+    <string name="dab_string_favorite">مفضلات</string>
     <string name="dab_string_search">بحث</string>
     <string name="dab_string_favorite_maxitem">وصلت المحطات المفضلة إلى الحد الأقصى.</string>
     <string name="dab_string_favorite_null">لا توجد محطات مفضلة حتى الآن، انتقل إلى قائمة المحطات لوضع إشارة مرجعية على محطاتك المفضلة ~</string>
@@ -30,4 +30,12 @@
     <string name="dab_setting_string_program_information">معلومات البرنامج</string>
     <string name="dab_setting_string_warning_service">إنذار/خدمة</string>
     <string name="dab_setting_string_dls">DLS</string>
+    <string name="dab_string_all">جميع</string>
+    <string name="dab_string_news">أخبار</string>
+    <string name="dab_string_talk">حديث</string>
+    <string name="dab_string_sports">رياضة</string>
+    <string name="dab_string_popular">شائع</string>
+    <string name="dab_string_classic">كلاسيكية</string>
+    <string name="dab_string_no_pty">لا نوع البرنامج</string>
+    <string name="dab_string_select_a_category">اختر تصنيف</string>
 </resources>

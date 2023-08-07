@@ -658,21 +658,21 @@ public class DabFragment extends Fragment implements View.OnClickListener,
         int index= DabSharePreference.getDabCategory(this.getContext());
         switch(index){
             case 0:
-                mDabButtonCategory.setTitle("All");         break;
+                mDabButtonCategory.setTitle(getString(R.string.dab_string_all));         break;
             case 1:
-                mDabButtonCategory.setTitle("News");        break;
+                mDabButtonCategory.setTitle(getString(R.string.dab_string_news));        break;
             case 2:
-                mDabButtonCategory.setTitle("Talk");        break;
+                mDabButtonCategory.setTitle(getString(R.string.dab_string_talk));        break;
             case 3:
-                mDabButtonCategory.setTitle("Sports");      break;
+                mDabButtonCategory.setTitle(getString(R.string.dab_string_sports));      break;
             case 4:
-                mDabButtonCategory.setTitle("Popular");     break;
+                mDabButtonCategory.setTitle(getString(R.string.dab_string_popular));     break;
             case 5:
-                mDabButtonCategory.setTitle("Classic");     break;
+                mDabButtonCategory.setTitle(getString(R.string.dab_string_classic));     break;
             case 6:
-                mDabButtonCategory.setTitle("No PTY");      break;
+                mDabButtonCategory.setTitle(getString(R.string.dab_string_no_pty));      break;
             default:
-                mDabButtonCategory.setTitle("All");
+                mDabButtonCategory.setTitle(getString(R.string.dab_string_all));
         }
     }
 

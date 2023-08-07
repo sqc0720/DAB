@@ -5,18 +5,15 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -31,7 +28,7 @@ import org.greenrobot.eventbus.EventBus;
 
 public class CategoryDialog extends DialogFragment {
 
-    private Fragment  mFragment;
+    private Fragment mFragment;
     private static CharSequence mFocus = "All";
     private static final String TAG = "DAB.CategoryDialog";
     private String[] mCategorys = {"All", "News", "Talk", "Sports", "Popular", "Classic", "No PTY"};
@@ -51,6 +48,7 @@ public class CategoryDialog extends DialogFragment {
     public interface CategoryDialogListener {
         public void onDialogCategoryClick(CategoryDialog dialog);
     }
+
     CategoryDialogListener listener;
 /*
     public static CategoryDialog newInstance(String param1) {
@@ -65,7 +63,7 @@ public class CategoryDialog extends DialogFragment {
 
     public CategoryDialog(Fragment f, CharSequence name) {
         mFocus = name.toString();
-        mFragment= f;
+        mFragment = f;
     }
 
     // Override the Fragment.onAttach() method to instantiate the NoticeDialogListener
@@ -75,7 +73,7 @@ public class CategoryDialog extends DialogFragment {
         // Verify that the host activity implements the callback interface
         try {
             // Instantiate the NoticeDialogListener so we can send events to the host
-            Log.i(TAG, "onAttach silas:"+context.toString());
+            Log.i(TAG, "onAttach silas:" + context.toString());
             listener = (CategoryDialogListener) mFragment;
         } catch (ClassCastException e) {
             // The activity doesn't implement the interface, throw exception
@@ -89,7 +87,7 @@ public class CategoryDialog extends DialogFragment {
         updateResourceForLightDarkMode();
     }
 
-    private void updateResourceForLightDarkMode(){
+    private void updateResourceForLightDarkMode() {
         dismiss();
         EventBus.getDefault().post(4);
         /* background not work
@@ -124,7 +122,7 @@ public class CategoryDialog extends DialogFragment {
         // Get the layout inflater
         LayoutInflater inflater = requireActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.dab_category_dialog, null);
-        mTitle= view.findViewById(R.id.dab_textview_category_title);
+        mTitle = view.findViewById(R.id.dab_textview_category_title);
         mClose = view.findViewById(R.id.dab_imagebutton_category_close);
         mGroup = view.findViewById(R.id.dab_categorydialog_group);
         mAll = view.findViewById(R.id.dab_categorydialog_all);
@@ -135,43 +133,34 @@ public class CategoryDialog extends DialogFragment {
         mClassic = view.findViewById(R.id.dab_categorydialog_classic);
         mNoPTY = view.findViewById(R.id.dab_categorydialog_nopty);
 
-        switch (mFocus.toString()) {
-            case "All":
-                mAll.setBackgroundResource(R.drawable.dab_category_shape_foucs);
-                mAll.setTextColor(0xFFFFFFFF);
-                break;
-            case "News":
-                mNews.setBackgroundResource(R.drawable.dab_category_shape_foucs);
-                mNews.setTextColor(0xFFFFFFFF);
-                break;
-            case "Talk":
-                mTalk.setBackgroundResource(R.drawable.dab_category_shape_foucs);
-                mTalk.setTextColor(0xFFFFFFFF);
-                break;
-            case "Sports":
-                mSports.setBackgroundResource(R.drawable.dab_category_shape_foucs);
-                mSports.setTextColor(0xFFFFFFFF);
-                break;
-            case "Popular":
-                mPopular.setBackgroundResource(R.drawable.dab_category_shape_foucs);
-                mPopular.setTextColor(0xFFFFFFFF);
-                break;
-            case "Classic":
-                mClassic.setBackgroundResource(R.drawable.dab_category_shape_foucs);
-                mClassic.setTextColor(0xFFFFFFFF);
-                break;
-            case "No PTY":
-                mNoPTY.setBackgroundResource(R.drawable.dab_category_shape_foucs);
-                mNoPTY.setTextColor(0xFFFFFFFF);
-                break;
-            default:
-                break;
+        String s = mFocus.toString();
+        if (getString(R.string.dab_string_all).equals(s)) {
+            mAll.setBackgroundResource(R.drawable.dab_category_shape_foucs);
+            mAll.setTextColor(0xFFFFFFFF);
+        } else if (getString(R.string.dab_string_news).equals(s)) {
+            mNews.setBackgroundResource(R.drawable.dab_category_shape_foucs);
+            mNews.setTextColor(0xFFFFFFFF);
+        } else if (getString(R.string.dab_string_talk).equals(s)) {
+            mTalk.setBackgroundResource(R.drawable.dab_category_shape_foucs);
+            mTalk.setTextColor(0xFFFFFFFF);
+        } else if (getString(R.string.dab_string_sports).equals(s)) {
+            mSports.setBackgroundResource(R.drawable.dab_category_shape_foucs);
+            mSports.setTextColor(0xFFFFFFFF);
+        } else if (getString(R.string.dab_string_popular).equals(s)) {
+            mPopular.setBackgroundResource(R.drawable.dab_category_shape_foucs);
+            mPopular.setTextColor(0xFFFFFFFF);
+        } else if (getString(R.string.dab_string_classic).equals(s)) {
+            mClassic.setBackgroundResource(R.drawable.dab_category_shape_foucs);
+            mClassic.setTextColor(0xFFFFFFFF);
+        } else if (getString(R.string.dab_string_no_pty).equals(s)) {
+            mNoPTY.setBackgroundResource(R.drawable.dab_category_shape_foucs);
+            mNoPTY.setTextColor(0xFFFFFFFF);
         }
         ;
         mClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i(TAG,"<========   CategoryDialog::dismiss ");
+                Log.i(TAG, "<========   CategoryDialog::dismiss ");
                 dismiss();
             }
         });
@@ -179,32 +168,31 @@ public class CategoryDialog extends DialogFragment {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (mAll.isChecked()) {
-                    mFocus = "All";
+                    mFocus = getString(R.string.dab_string_all);
                     setDabCategory(0);
                 } else if (mNews.isChecked()) {
-                    mFocus = "News";
+                    mFocus = getString(R.string.dab_string_news);
                     setDabCategory(1);
                 } else if (mTalk.isChecked()) {
-                    mFocus = "Talk";
+                    mFocus = getString(R.string.dab_string_talk);
                     setDabCategory(2);
                 } else if (mSports.isChecked()) {
-                    mFocus = "Sports";
+                    mFocus = getString(R.string.dab_string_sports);
                     setDabCategory(3);
                 } else if (mPopular.isChecked()) {
-                    mFocus = "Popular";
+                    mFocus = getString(R.string.dab_string_popular);
                     setDabCategory(4);
                 } else if (mClassic.isChecked()) {
-                    mFocus = "Classic";
+                    mFocus = getString(R.string.dab_string_classic);
                     setDabCategory(5);
                 } else if (mNoPTY.isChecked()) {
-                    mFocus = "No PTY";
+                    mFocus = getString(R.string.dab_string_no_pty);
                     setDabCategory(6);
                 } else {
-                    ;
                 }
                 EventBus.getDefault().post(3);
                 listener.onDialogCategoryClick(CategoryDialog.this);
-                Log.i(TAG,"<========   CategoryDialog::dismiss ");
+                Log.i(TAG, "<========   CategoryDialog::dismiss ");
                 dismiss();
             }
         });
@@ -233,40 +221,40 @@ public class CategoryDialog extends DialogFragment {
         win.setAttributes(params);
     }
 
-    public  CharSequence getCategory() {
+    public CharSequence getCategory() {
         return mFocus;
     }
 
-    private void getDabCategory(){
-        int index= DabSharePreference.getDabCategory(this.getContext());
-        switch(index){
-            case 0:
-                mFocus= "All";
-                break;
-            case 1:
-                mFocus= "News";
-                break;
-            case 2:
-                mFocus= "Talk";
-                break;
-            case 3:
-                mFocus= "Sports";
-                break;
-            case 4:
-                mFocus= "Popular";
-                break;
-            case 5:
-                mFocus= "Classic";
-                break;
-            case 6:
-                mFocus= "No PTY";
-                break;
-            default:
-                mFocus= "All";
-        }
-    }
+//    private void getDabCategory() {
+//        int index = DabSharePreference.getDabCategory(this.getContext());
+//        switch (index) {
+//            case 0:
+//                mFocus = "All";
+//                break;
+//            case 1:
+//                mFocus = "News";
+//                break;
+//            case 2:
+//                mFocus = "Talk";
+//                break;
+//            case 3:
+//                mFocus = "Sports";
+//                break;
+//            case 4:
+//                mFocus = "Popular";
+//                break;
+//            case 5:
+//                mFocus = "Classic";
+//                break;
+//            case 6:
+//                mFocus = "No PTY";
+//                break;
+//            default:
+//                mFocus = "All";
+//        }
+//    }
 
-    private void setDabCategory(int index){
-        DabSharePreference.setDabCategory(this.getContext(),index);
+    private void setDabCategory(int index) {
+        DabSharePreference.setDabCategory(this.getContext(), index);
     }
 }

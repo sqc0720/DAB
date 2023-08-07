@@ -125,7 +125,7 @@
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginRight="28dp"
-        app:exampleString="All"
+        app:exampleString="@string/dab_string_all"
         app:exampleDrawable="@drawable/dab_icon_type"
         app:layout_constraintTop_toTopOf="@id/dab_dabbutton_scan"
         app:layout_constraintEnd_toStartOf="@id/dab_dabbutton_scan"/>
@@ -145,7 +145,7 @@
             android:layout_height="wrap_content"
             android:button="@null"
             android:textSize="28sp"
-            android:text="Station List"
+            android:text="@string/dab_string_stationlist"
             android:checked="true"
             android:textColor="@color/dab_radiobutton_text_color"/>
         <RadioButton
@@ -155,7 +155,7 @@
             android:layout_marginStart="72dp"
             android:button="@null"
             android:textSize="28sp"
-            android:text="Favorite"
+            android:text="@string/dab_string_favorite"
             android:textColor="@color/dab_radiobutton_text_color"/>
     </RadioGroup>
 

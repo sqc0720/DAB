@@ -11,7 +11,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="29dp"
         android:layout_marginStart="418dp"
-        android:text="Select a category"
+        android:text="@string/dab_string_select_a_category"
         android:textColor="@color/dab_category_text"
         android:textSize="36sp"
         android:layout_gravity="center"
@@ -22,7 +22,7 @@
         android:layout_width="132dp"
         android:layout_height="60dp"
         android:textAllCaps="false"
-        android:text="Cancel"
+        android:text="@string/dab_string_scan_cancel"
         android:textColor="@color/dab_category_text"
         android:textSize="28sp"
         android:background="@null"
@@ -49,7 +49,7 @@
             android:gravity="center"
             android:button="@null"
             android:textSize="32sp"
-            android:text="All"
+            android:text="@string/dab_string_all"
             android:textColor="@color/dab_category_type_text_unchecked"/>
         <RadioButton
             android:id="@+id/dab_categorydialog_news"
@@ -62,7 +62,7 @@
             android:gravity="center"
             android:button="@null"
             android:textSize="32sp"
-            android:text="News"
+            android:text="@string/dab_string_news"
             android:textColor="@color/dab_category_type_text_unchecked"/>
         <RadioButton
             android:id="@+id/dab_categorydialog_talk"
@@ -75,7 +75,7 @@
             android:gravity="center"
             android:button="@null"
             android:textSize="32sp"
-            android:text="Talk"
+            android:text="@string/dab_string_talk"
             android:textColor="@color/dab_category_type_text_unchecked"/>
         <RadioButton
             android:id="@+id/dab_categorydialog_sports"
@@ -87,7 +87,7 @@
             android:gravity="center"
             android:button="@null"
             android:textSize="32sp"
-            android:text="Sports"
+            android:text="@string/dab_string_sports"
             android:textColor="@color/dab_category_type_text_unchecked"/>
         <RadioButton
             android:id="@+id/dab_categorydialog_popular"
@@ -100,7 +100,7 @@
             android:gravity="center"
             android:button="@null"
             android:textSize="32sp"
-            android:text="Popular"
+            android:text="@string/dab_string_popular"
             android:textColor="@color/dab_category_type_text_unchecked"/>
         <RadioButton
             android:id="@+id/dab_categorydialog_classic"
@@ -113,7 +113,7 @@
             android:gravity="center"
             android:button="@null"
             android:textSize="32sp"
-            android:text="Classic"
+            android:text="@string/dab_string_classic"
             android:textColor="@color/dab_category_type_text_unchecked"/>
         <RadioButton
             android:id="@+id/dab_categorydialog_nopty"
@@ -125,7 +125,7 @@
             android:gravity="center"
             android:button="@null"
             android:textSize="32sp"
-            android:text="NO PTY"
+            android:text="@string/dab_string_no_pty"
             android:textColor="@color/dab_category_type_text_unchecked"/>
     </RadioGroup>
 

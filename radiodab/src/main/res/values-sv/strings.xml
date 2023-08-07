@@ -1,7 +1,7 @@
 <resources>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="dab_string_no_signal">No Signal</string>
+    <string name="dab_string_no_signal">Inga signaler</string>
     <string name="dab_string_loading">Loading</string>
 
     <string name="dab_string_stationlist">Stationslista</string>
@@ -30,4 +30,12 @@
     <string name="dab_setting_string_program_information">Programinformation</string>
     <string name="dab_setting_string_warning_service">Varning/Service</string>
     <string name="dab_setting_string_dls">DLS</string>
+    <string name="dab_string_all">Allt</string>
+    <string name="dab_string_news">Nyheter</string>
+    <string name="dab_string_talk">Prat</string>
+    <string name="dab_string_sports">Sport</string>
+    <string name="dab_string_popular">Populär</string>
+    <string name="dab_string_classic">Klassiker</string>
+    <string name="dab_string_no_pty">Ingen programtyp</string>
+    <string name="dab_string_select_a_category">Välj en kategori</string>
 </resources>

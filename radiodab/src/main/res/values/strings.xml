@@ -29,4 +29,12 @@
     <string name="dab_setting_string_program_information">Program Information</string>
     <string name="dab_setting_string_warning_service">Warning/Service</string>
     <string name="dab_setting_string_dls">DLS</string>
+    <string name="dab_string_all">All</string>
+    <string name="dab_string_news">News</string>
+    <string name="dab_string_talk">Talk</string>
+    <string name="dab_string_sports">Sports</string>
+    <string name="dab_string_popular">Popular</string>
+    <string name="dab_string_classic">Classic</string>
+    <string name="dab_string_no_pty">NO PTY</string>
+    <string name="dab_string_select_a_category">Select a category</string>
 </resources>

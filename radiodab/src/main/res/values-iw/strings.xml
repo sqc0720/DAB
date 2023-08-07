@@ -1,7 +1,7 @@
 <resources>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="dab_string_no_signal">No Signal</string>
+    <string name="dab_string_no_signal">אין קליטה</string>
     <string name="dab_string_loading">Loading</string>
 
     <string name="dab_string_stationlist">רשימת תחנה</string>
@@ -30,4 +30,12 @@
     <string name="dab_setting_string_program_information">מידע מערכת</string>
     <string name="dab_setting_string_warning_service">אזהרה/שירות</string>
     <string name="dab_setting_string_dls">DLS</string>
+    <string name="dab_string_all">הכל</string>
+    <string name="dab_string_news">חדשות</string>
+    <string name="dab_string_talk">דיבור</string>
+    <string name="dab_string_sports">ספורט</string>
+    <string name="dab_string_popular">פופולרי</string>
+    <string name="dab_string_classic">מוזיקה קלאסית</string>
+    <string name="dab_string_no_pty">אין Pty</string>
+    <string name="dab_string_select_a_category">בחר קטגוריה</string>
 </resources>
