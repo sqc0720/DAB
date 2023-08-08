@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="6dip" />
+            <size
+                android:width="-1dp"
+                android:height="280dp" />
+            <!-- 边缘线条颜色 -->
+            <solid android:color="@color/voice_seekbar_background" />
+            <!-- 圆角的幅度 -->
+            <stroke
+                android:width="1dp"
+                android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners
+                    android:bottomLeftRadius="6dip"
+                    android:bottomRightRadius="6dip"
+                    android:topLeftRadius="6dip"
+                    android:topRightRadius="6dip" />
+                <solid android:color="@color/voice_seekbar_progress_background" />
+                <size
+                    android:width="-1dp"
+                    android:height="280dp" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>
+
+
+    <!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--&lt;!&ndash;    <item android:state_enabled="false">&ndash;&gt;-->
+    <!--&lt;!&ndash;        <layer-list>&ndash;&gt;-->
+    <!--&lt;!&ndash;            <item android:id="@android:id/background">&ndash;&gt;-->
+    <!--&lt;!&ndash;                <shape>&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;                    <corners android:bottomLeftRadius="35dip" android:bottomRightRadius="35dip" android:topLeftRadius="35dip" android:topRightRadius="35dip" />&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;                    <size android:width="-1dp" android:height="70dp" />&ndash;&gt;-->
+    <!--&lt;!&ndash;                    &lt;!&ndash; 边缘线条颜色 &ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;                    <solid android:color="@android:color/transparent" />&ndash;&gt;-->
+    <!--&lt;!&ndash;                    &lt;!&ndash; 圆角的幅度 &ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;                    <stroke android:width="1dp" android:color="@android:color/transparent" />&ndash;&gt;-->
+    <!--&lt;!&ndash;                </shape>&ndash;&gt;-->
+    <!--&lt;!&ndash;            </item>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;            <item android:id="@android:id/progress">&ndash;&gt;-->
+    <!--&lt;!&ndash;                <clip>&ndash;&gt;-->
+    <!--&lt;!&ndash;                    <shape>&ndash;&gt;-->
+    <!--&lt;!&ndash;&lt;!&ndash;                        <corners android:radius="35dip" />&ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;                        <gradient android:angle="0" android:endColor="#f06b51" android:startColor="#f06b51" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;                        <size android:width="-1dp" android:height="68dp" />&ndash;&gt;-->
+    <!--&lt;!&ndash;                    </shape>&ndash;&gt;-->
+    <!--&lt;!&ndash;                </clip>&ndash;&gt;-->
+    <!--&lt;!&ndash;            </item>&ndash;&gt;-->
+    <!--&lt;!&ndash;        </layer-list>&ndash;&gt;-->
+    <!--&lt;!&ndash;    </item>&ndash;&gt;-->
+    <!--    <item android:state_enabled="true">-->
+    <!--        <layer-list>-->
+    <!--            <item android:id="@android:id/background">-->
+    <!--                <shape>-->
+    <!--&lt;!&ndash;                    <corners android:radius="6dip" />&ndash;&gt;-->
+    <!--                    <size android:width="-1dp" android:height="4dp" />-->
+    <!--                    &lt;!&ndash; 边缘线条颜色 &ndash;&gt;-->
+    <!--                    <solid android:color="@color/color_seekbar_bg" />-->
+    <!--                    &lt;!&ndash; 圆角的幅度 &ndash;&gt;-->
+    <!--                    <stroke android:width="1dp" android:color="@android:color/transparent" />-->
+    <!--                </shape>-->
+    <!--            </item>-->
+
+    <!--            <item android:id="@android:id/progress">-->
+    <!--                <clip>-->
+    <!--                    <shape>-->
+    <!--&lt;!&ndash;                        <corners android:bottomLeftRadius="6dip" android:bottomRightRadius="6dip" android:topLeftRadius="6dip" android:topRightRadius="6dip" />&ndash;&gt;-->
+    <!--                        <gradient android:angle="0" android:endColor="@color/color_progress" android:startColor="@color/color_progress" />-->
+    <!--                        <size android:width="-1dp" android:height="4dp" />-->
+    <!--                    </shape>-->
+    <!--                </clip>-->
+    <!--            </item>-->
+    <!--        </layer-list>-->
+    <!--    </item>-->
+    <!--</selector>-->

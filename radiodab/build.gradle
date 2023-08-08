@@ -48,6 +48,7 @@ android {
 }
 
 dependencies {
+    compileOnly files('libs/car-1.3.0.jar')
     compileOnly files('libs\\framework-1.3.0.jar')
 //    implementation fileTree(include:['event.jar'], dir:'libs')
     compileOnly files('libs\\maxus-1.3.0.jar')

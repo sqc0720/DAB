@@ -76,6 +76,8 @@
         android:src="@drawable/dab_favorite_selector"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
+
+
     <ImageButton
         android:id="@+id/dab_imagebutton_voice"
         android:layout_width="60dp"
@@ -182,4 +184,56 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />
+
+
+
+    <com.datong.radiodab.view.VerticalSeekBar
+        android:id="@+id/seekbar_id"
+        android:layout_width="72dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="58dp"
+        android:background="@null"
+        android:max="32"
+        android:orientation="vertical"
+        android:progress="16"
+        android:layoutDirection="ltr"
+        android:progressDrawable="@drawable/seekbar_bg"
+        android:splitTrack="false"
+        android:thumb="@null"
+        app:layout_constraintEnd_toEndOf="@id/dab_imagebutton_voice"
+        app:layout_constraintStart_toStartOf="@id/dab_imagebutton_voice"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/voice_value_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/voice_value_color"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@id/seekbar_id"
+        app:layout_constraintStart_toStartOf="@id/seekbar_id"
+        app:layout_constraintTop_toTopOf="@id/seekbar_id" />
+
+
+    <ImageButton
+        android:id="@+id/voice_hint_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginStart="640dp"
+        android:background="@null"
+        android:src="@drawable/radio_icon_seekbar_voice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/voice_group_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="seekbar_id,voice_value_id,voice_hint_iv"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

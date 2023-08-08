@@ -40,4 +40,9 @@
     <color name="dab_setting_bg_end">#FFC5D2E6</color>
     <color name="dab_station_item_bg">#CCFFFFFF</color>
     <color name="dab_station_item_name">#FF232323</color>
+
+    <!--dab volume-->
+    <color name="voice_seekbar_background">#1A000000</color>
+    <color name="voice_seekbar_progress_background">#E6ffffff</color>
+    <color name="voice_value_color">#232323</color>
 </resources>

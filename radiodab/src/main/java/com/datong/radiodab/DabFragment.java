@@ -8,6 +8,7 @@ import static android.media.AudioManager.AUDIOFOCUS_REQUEST_GRANTED;
 import static android.view.View.INVISIBLE;
 
 import android.annotation.SuppressLint;
+import android.car.media.CarAudioManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.ColorStateList;
@@ -23,28 +24,32 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.Group;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Handler;
 import android.os.RemoteException;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.view.textclassifier.SelectionSessionLogger;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.datong.radiodab.view.VerticalSeekBar;
 import com.saicmotor.hardkey.KeyPolicyManager;
 import com.saicmotor.power.SaicPowerManager;
 
@@ -106,6 +111,10 @@ public class DabFragment extends Fragment implements View.OnClickListener,
     private long mServerId;
     //service
     private DabServiceWrapper mDabServiceWrapper;
+    private VoiceSettingsController voiceSettingsController;
+    private VerticalSeekBar voiceSeekbar;
+    private TextView voice_valueTV;
+    private Group voice_group;
 
     public DabFragment(DabTabFragment tab) {
         // Required empty public constructor
@@ -167,6 +176,12 @@ public class DabFragment extends Fragment implements View.OnClickListener,
         mDabButtonCategory= view.findViewById(R.id.dab_dabbutton_category);
         getDialogCategorylabel();
         mDabButtonScan= view.findViewById(R.id.dab_dabbutton_scan);
+
+        voiceSeekbar= view.findViewById(R.id.seekbar_id);
+        voice_valueTV= view.findViewById(R.id.voice_value_id);
+        voice_group= view.findViewById(R.id.voice_group_id);
+
+
         mDabButtonScan.setOnDabButtonClickListener(new DabButton.OnDabButtonClickListener(){
             public void onClick(View v){
                 Log.i(TAG,"<========   OnDabButtonClickListener on click ");
@@ -192,10 +207,89 @@ public class DabFragment extends Fragment implements View.OnClickListener,
             }
         });
         mTextViewHint= (TextView)view.findViewById(R.id.dab_textview_hint);
+        view.setOnTouchListener((v, event) -> {
+            if(event.getAction() == MotionEvent.ACTION_DOWN){
+                //voiceSeekbar.setVisibility(View.INVISIBLE);
+                voice_group.setVisibility(View.GONE);
+                mImageButtonVoice.setVisibility(View.VISIBLE);
+            }
+            return false;
+        });
         initView();
         initDabStationContent();
-
+        initVolume();
         return view;
+    }
+    private Handler mHandler = new Handler();
+    private Runnable mVoiceAdjust = new Runnable() {
+        @Override
+        public void run() {
+            voice_group.setVisibility(View.GONE);
+            mImageButtonVoice.setVisibility(View.VISIBLE);
+        }
+    };
+    private void initVolume() {
+        Log.d(TAG, "initVolume: ");
+        voiceSettingsController = new VoiceSettingsController(getActivity().getApplicationContext());
+        int value = voiceSettingsController.getVolumeGroupIndex(CarAudioManager.AUDIO_ZONE0_GROUP_MEDIA);
+        voiceSeekbar.setProgress(value);
+        voice_valueTV.setText(String.valueOf(value));
+        voiceSeekbar.setMaxusSeekBarChangeListener(new VerticalSeekBar.OnMaxusSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                Log.e(getClass().getSimpleName(), "onProgressChanged progress = " + progress);
+                voiceSettingsController.setVolumeGroupIndex(CarAudioManager.AUDIO_ZONE0_GROUP_MEDIA, progress);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                mHandler.removeCallbacks(mVoiceAdjust);
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                mHandler.postDelayed(mVoiceAdjust, 2000);
+            }
+        });
+        voiceSettingsController.registerCarVolumeCallback(new CarAudioManager.CarVolumeCallback() {
+            @Override
+            public void onGroupVolumeChanged(int zoneId, int groupId, int flags) {
+                super.onGroupVolumeChanged(zoneId, groupId, flags);
+                switch (groupId) {
+                    case CarAudioManager.AUDIO_ZONE0_GROUP_MEDIA:
+                        // 媒体音量初始化
+                        int value = voiceSettingsController.getVolumeGroupIndex(CarAudioManager.AUDIO_ZONE0_GROUP_MEDIA);
+                        Log.d(TAG, "onGroupVolumeChanged value = " + value);
+                        getActivity().runOnUiThread(() -> {
+                            voiceSeekbar.setProgress(value);
+                            voice_valueTV.setText(String.valueOf(value));
+                        });
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            @Override
+            public void onMasterMuteChanged(int zoneId, int flags) {
+                super.onMasterMuteChanged(zoneId, flags);
+            }
+
+            @Override
+            public void onAudioGroupChanged(int zoneId, int groupId, int flags) {
+                super.onAudioGroupChanged(zoneId, groupId, flags);
+            }
+
+            @Override
+            public void onBt2AudioZoneStatusChanged(boolean bt2AudioZoneStatus) {
+                super.onBt2AudioZoneStatusChanged(bt2AudioZoneStatus);
+            }
+
+            @Override
+            public void onForceUseSpeakerChanged(boolean forceUseSpeaker) {
+                super.onForceUseSpeakerChanged(forceUseSpeaker);
+            }
+        });
     }
 
     @Override
@@ -329,7 +423,7 @@ public class DabFragment extends Fragment implements View.OnClickListener,
         mImageButtonPlay.setOnClickListener(this);
         mImageButtonPretrack.setOnClickListener(this);
         mImageButtonNexttrack.setOnClickListener(this);
-
+        mImageButtonVoice.setOnClickListener(this);
         mDabButtonCategory.setOnDabButtonClickListener(new DabButton.OnDabButtonClickListener(){
             public void onClick(View v){
                 Log.i(TAG,"<========   OnDabButtonClickListener on click ");
@@ -646,6 +740,10 @@ public class DabFragment extends Fragment implements View.OnClickListener,
         }else if(i== R.id.dab_imagebutton_nexttrack) {   //have bug
             setPreNextStation(2);
             Log.i(TAG,"<========   next radio  =========>");
+        }else if (i == R.id.dab_imagebutton_voice){
+            voice_group.setVisibility(View.VISIBLE);
+            mImageButtonVoice.setVisibility(View.INVISIBLE);
+            mHandler.postDelayed(mVoiceAdjust, 3000);
         }
         Log.i(TAG,"              on click  =========>");
     }
